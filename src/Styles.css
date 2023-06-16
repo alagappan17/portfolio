@@ -1,0 +1,67 @@
+.headerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo img{
+    margin: 35px 100px;
+    width: 125px;
+}
+
+.headerText {
+    float: right;
+}
+
+.headerText h1{
+    margin: 35px 100px;
+    font-family: 'Louis George Cafe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.navButton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 50px;
+  }
+
+.navButton-item {
+    width: 230px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.blackButton {
+    background: #000000;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 20px 0px 0px 20px;
+    font-family: 'Louis George Cafe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.whiteButton {
+    background: #FFFFFF;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 0px 20px 20px 0px;
+    font-family: 'Louis George Cafe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
