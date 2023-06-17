@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-const DevContent = () => {
+const ArtContent = () => {
   const containerRef = useRef(null);
   const timelineRef = useRef(null);
 
@@ -51,22 +51,22 @@ const DevContent = () => {
     <div>
       <div className='slideContainer' ref={containerRef} onWheel={handleScroll}>
         <section id='slide-1'>
-          <h1>Dev Page 1</h1>
+          <h1>Art Page 1</h1>
         </section>
         <section id='slide-2'>
-          <h1>Dev Page 2</h1>
+          <h1>Art Page 2</h1>
         </section>
         <section id='slide-3'>
-          <h1>Dev Page 3</h1>
+          <h1>Art Page 3</h1>
         </section>
         <section id='slide-4'>
-          <h1>Dev Page 4</h1>
+          <h1>Art Page 4</h1>
         </section>
         <section id='slide-5'>
-          <h1>Dev Page 5</h1>
+          <h1>Art Page 5</h1>
         </section>
         <section id='slide-6'>
-          <h1>Dev Page 6</h1>
+          <h1>Art Page 6</h1>
         </section>
       </div>
       <div className='timeline tooltip' ref={timelineRef} data-tooltip='Too Lazy to scroll?'>
@@ -84,4 +84,4 @@ const DevContent = () => {
   );
 };
 
-export default DevContent;
+export default ArtContent;

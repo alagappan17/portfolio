@@ -5,6 +5,7 @@ import Header from './Header';
 import NavButtons from './NavButtons';
 import { ProfileContext } from './ProfileContext';
 import DevContent from './DevContent';
+import ArtContent from './ArtContent';
 
 function App() {
   const [activeProfile, setActiveProfile] = useState("Developer");
@@ -12,7 +13,8 @@ function App() {
     <div className="App">
       <ProfileContext.Provider value={{activeProfile, setActiveProfile}}>
         <Header />
-        <DevContent />
+        {activeProfile === "Developer" ? <DevContent/> : <ArtContent />}
+        {/* <DevContent /> */}
         <NavButtons />
       </ProfileContext.Provider>
     </div>
