@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import ScrollBar from './ScrollBar';
 
 const DevContent = () => {
   const containerRef = useRef(null);
@@ -69,7 +70,8 @@ const DevContent = () => {
           <h1>Dev Page 6</h1>
         </section>
       </div>
-      <div className='timeline tooltip' ref={timelineRef} data-tooltip='Too Lazy to scroll?'>
+      <ScrollBar timelineRef = {timelineRef} currentSlide = {currentSlide}/>
+      {/* <div className='timeline tooltip' ref={timelineRef} data-tooltip='Too Lazy to scroll?'>
         <div className='timeline-dots'>
           <div className={`timeline-dot ${currentSlide >= 0 ? 'active' : ''}`}></div>
           <div className={`timeline-dot ${currentSlide >= 1 ? 'active' : ''}`}></div>
@@ -78,8 +80,7 @@ const DevContent = () => {
           <div className={`timeline-dot ${currentSlide >= 4 ? 'active' : ''}`}></div>
           <div className={`timeline-dot ${currentSlide >= 5 ? 'active' : ''}`}></div>
         </div>
-        {/* <span class="cursor-text">Too lazy to scroll?</span> */}
-      </div>
+      </div> */}
     </div>
   );
 };

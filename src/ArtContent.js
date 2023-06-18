@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import ScrollBar from './ScrollBar';
 
 const ArtContent = () => {
   const containerRef = useRef(null);
@@ -69,17 +70,7 @@ const ArtContent = () => {
           <h1>Art Page 6</h1>
         </section>
       </div>
-      <div className='timeline tooltip' ref={timelineRef} data-tooltip='Too Lazy to scroll?'>
-        <div className='timeline-dots'>
-          <div className={`timeline-dot ${currentSlide >= 0 ? 'active' : ''}`}></div>
-          <div className={`timeline-dot ${currentSlide >= 1 ? 'active' : ''}`}></div>
-          <div className={`timeline-dot ${currentSlide >= 2 ? 'active' : ''}`}></div>
-          <div className={`timeline-dot ${currentSlide >= 3 ? 'active' : ''}`}></div>
-          <div className={`timeline-dot ${currentSlide >= 4 ? 'active' : ''}`}></div>
-          <div className={`timeline-dot ${currentSlide >= 5 ? 'active' : ''}`}></div>
-        </div>
-        {/* <span class="cursor-text">Too lazy to scroll?</span> */}
-      </div>
+      <ScrollBar timelineRef = {timelineRef} currentSlide = {currentSlide}/>
     </div>
   );
 };

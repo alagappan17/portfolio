@@ -145,3 +145,184 @@
     opacity: 1;
     visibility: visible;
   }
+
+  .social-icons-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    width: 50px;
+    padding: 10px;
+    background-color: #D9D9D9;
+    z-index: 9999;
+  }
+  
+  .social-icons-container a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons-container a:hover {
+    color: lightgray;
+  }
+
+  /* Component Specific Animations*/
+
+  .navButton-container.fadeInUp {
+    animation-delay: 0.5s;
+}
+
+  /* Animations Below */
+
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+    .rotateInUpLeft {
+        -webkit-animation-name: rotateInUpLeft;
+        animation-name: rotateInUpLeft;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes rotateInUpLeft {
+        0% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+        transform: rotate3d(0, 0, 1, 45deg);
+        opacity: 0;
+        }
+        100% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+        }
+        }
+        @keyframes rotateInUpLeft {
+        0% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+        transform: rotate3d(0, 0, 1, 45deg);
+        opacity: 0;
+        }
+        100% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+        }
+        } 
+
+        .rotateInUpRight {
+            -webkit-animation-name: rotateInUpRight;
+            animation-name: rotateInUpRight;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            }
+            @-webkit-keyframes rotateInUpRight {
+            0% {
+            -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -webkit-transform: rotate3d(0, 0, 1, -90deg);
+            transform: rotate3d(0, 0, 1, -90deg);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -webkit-transform: none;
+            transform: none;
+            opacity: 1;
+            }
+            }
+            @keyframes rotateInUpRight {
+            0% {
+            -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -webkit-transform: rotate3d(0, 0, 1, -90deg);
+            transform: rotate3d(0, 0, 1, -90deg);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -webkit-transform: none;
+            transform: none;
+            opacity: 1;
+            }
+            } 
+    
+            .fadeInDown {
+                -webkit-animation-name: fadeInDown;
+                animation-name: fadeInDown;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                }
+                @-webkit-keyframes fadeInDown {
+                0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+                }
+                100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+                }
+                }
+                @keyframes fadeInDown {
+                0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+                }
+                100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+                }
+                } 

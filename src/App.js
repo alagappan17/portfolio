@@ -6,6 +6,8 @@ import NavButtons from './NavButtons';
 import { ProfileContext } from './ProfileContext';
 import DevContent from './DevContent';
 import ArtContent from './ArtContent';
+import DevIconPack from './DevIconPack';
+// import AnimatedComponentWrapper from './AnimatedComponentWrapper';
 
 function App() {
   const [activeProfile, setActiveProfile] = useState("Developer");
@@ -14,8 +16,8 @@ function App() {
       <ProfileContext.Provider value={{activeProfile, setActiveProfile}}>
         <Header />
         {activeProfile === "Developer" ? <DevContent/> : <ArtContent />}
-        {/* <DevContent /> */}
         <NavButtons />
+        <DevIconPack/>
       </ProfileContext.Provider>
     </div>
   );

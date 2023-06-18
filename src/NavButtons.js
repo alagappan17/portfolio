@@ -7,7 +7,7 @@ const NavButtons = () => {
     const { activeProfile, setActiveProfile } = useContext(ProfileContext)
   return (
     <div>
-        <div class="navButton-container">
+        <div class="navButton-container fadeInUp">
             <div class={`navButton-item devButton ${activeProfile === "Developer" ? "blackButton" : "whiteButton"}`} onClick={() => {setActiveProfile("Developer")}}>
                 <span>Developer</span>
             </div>
