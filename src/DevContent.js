@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ScrollBar from './ScrollBar';
+import ModelViewer from './ModelViewer';
 
 const DevContent = () => {
   const containerRef = useRef(null);
@@ -52,7 +53,7 @@ const DevContent = () => {
     <div>
       <div className='slideContainer' ref={containerRef} onWheel={handleScroll}>
         <section id='slide-1'>
-          <div className='slide-1-left'>
+          <div className='slide-1-props slide-left'>
             <h1 className='rotate nine fadeInRight'>I am&nbsp;
               <span>A</span>
               <span>l</span>
@@ -66,12 +67,18 @@ const DevContent = () => {
             </h1>
             <p className='fadeInRight description'>An IT graduate, primarily passionate about three things<br />Design | Development | Digital Art</p>
           </div>
-          <div className='slide-1-right'>
+          <div className='slide-1-props slide-right'>
             <img alt='DevLogo' src='./images/SkidMaskFinal.png' style={{width:'250px'}}/>
           </div>
         </section>
+
         <section id='slide-2'>
-          <h1>Dev Page 2</h1>
+          <div className='slide-2-props slide-left'>
+            Hello World
+          </div>
+          <div className='slide-2-right slide-right'>
+            <ModelViewer scale="2" modelPath={"./models/abstract_shape.glb"} />
+          </div>
         </section>
         <section id='slide-3'>
           <h1>Dev Page 3</h1>
