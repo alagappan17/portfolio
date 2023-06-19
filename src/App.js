@@ -7,6 +7,7 @@ import { ProfileContext } from './ProfileContext';
 import DevContent from './DevContent';
 import ArtContent from './ArtContent';
 import DevIconPack from './DevIconPack';
+import ArtIconPack from './ArtIconPack';
 // import AnimatedComponentWrapper from './AnimatedComponentWrapper';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <Header />
         {activeProfile === "Developer" ? <DevContent/> : <ArtContent />}
         <NavButtons />
-        <DevIconPack/>
+        {activeProfile === "Developer" ? <DevIconPack/> : <ArtIconPack/>}
       </ProfileContext.Provider>
     </div>
   );

@@ -4,7 +4,7 @@ const ScrollBar = (props) => {
     const {timelineRef, currentSlide } = props
   return (
     <div>
-        <div className='timeline tooltip' ref={timelineRef} data-tooltip='Too Lazy to scroll?'>
+        <div className='timeline tooltip' ref={timelineRef} data-tooltip='Too Lazy to Scroll?'>
             <div className='timeline-dots'>
                 <div className={`timeline-dot ${currentSlide >= 0 ? 'active' : ''}`}></div>
                 <div className={`timeline-dot ${currentSlide >= 1 ? 'active' : ''}`}></div>
