@@ -227,6 +227,35 @@ background-color: gray;
   font-size: 20px;
 }
 
+.slide-1-props p span{
+  font-size: 25px;
+}
+
+.slide-2-props p {
+  font-family: 'Louis George Cafe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.slide-left.slide-2-props {
+  align-items: flex-end;
+  padding: 20px;
+  text-align: right;
+  line-height: 28px;
+}
+
+.slide-left.slide-2-props span {
+  font-size: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.slide-left.slide-2-props span:hover {
+  font-size: 45px;
+  line-height: 60px;
+  transition: 0.3s ease-in-out;
+}
+
 .slide-right {
   flex: 1;
   display: flex;

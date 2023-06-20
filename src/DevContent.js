@@ -17,7 +17,6 @@ const DevContent = () => {
 
     const handleScroll = () => {
       scrollPercentage = ((container.scrollLeft / (container.scrollWidth - container.clientWidth)) * 100)/2 + 10;
-    //   timeline.style.width = `${scrollPercentage}%`;
       timeline.style.width = `${scrollPercentage}%`;
 
       const slides = container.querySelectorAll('section');
@@ -49,9 +48,38 @@ const DevContent = () => {
     });
   };
 
+  const handleTouchStart = (event) => {
+    const container = containerRef.current;
+    container.style.scrollBehavior = 'unset';
+    container.style.overflowX = 'scroll';
+
+    const touch = event.touches[0];
+    container.dataset.touchStart = touch.clientX;
+    container.dataset.scrollLeftStart = container.scrollLeft;
+  };
+
+  const handleTouchMove = (event) => {
+    const container = containerRef.current;
+    const touch = event.touches[0];
+    const touchStart = parseInt(container.dataset.touchStart, 10);
+    const scrollLeftStart = parseInt(container.dataset.scrollLeftStart, 10);
+    const touchMoveDelta = touch.clientX - touchStart;
+
+    container.scrollLeft = scrollLeftStart - touchMoveDelta;
+  };
+
+  const handleTouchEnd = () => {
+    const container = containerRef.current;
+    container.style.scrollBehavior = 'smooth';
+    container.style.overflowX = 'auto';
+
+    delete container.dataset.touchStart;
+    delete container.dataset.scrollLeftStart;
+  };
+
   return (
     <div>
-      <div className='slideContainer' ref={containerRef} onWheel={handleScroll}>
+      <div className='slideContainer' ref={containerRef} onWheel={handleScroll} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <section id='slide-1'>
           <div className='slide-1-props slide-left'>
             <h1 className='rotate nine fadeInRight'>I am&nbsp;
@@ -65,7 +93,7 @@ const DevContent = () => {
               <span>a</span>
               <span>n</span>
             </h1>
-            <p className='fadeInRight description'>An IT graduate, primarily passionate about three things<br />Design | Development | Digital Art</p>
+            <p className='fadeInRight description'>An IT graduate, primarily passionate about three things<br /><span id='desDevArt'></span>Design | Development | Digital Art</p>
           </div>
           <div className='slide-1-props slide-right'>
             <img alt='DevLogo' src='./images/SkidMaskFinal.png' style={{width:'250px'}}/>
@@ -74,10 +102,12 @@ const DevContent = () => {
 
         <section id='slide-2'>
           <div className='slide-2-props slide-left'>
-            Hello World
+            <p>
+              With a keen <br /> eye for <span> aesthetics </span> <br /> added to a <br /> strong <span> technical foundation </span> <br /> I strive to create <br /> visually <span> captivating experiences</span> <br /> that seamlessly <br /> merge form and function
+            </p>
           </div>
           <div className='slide-2-right slide-right'>
-            <ModelViewer scale="2" modelPath={"./models/abstract_shape.glb"} />
+            <ModelViewer scale=".005" modelPath={"./models/dragon_glass.glb"} />
           </div>
         </section>
         <section id='slide-3'>

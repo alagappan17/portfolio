@@ -48,9 +48,40 @@ const ArtContent = () => {
     });
   };
 
+  
+  const handleTouchStart = (event) => {
+    const container = containerRef.current;
+    container.style.scrollBehavior = 'smooth';
+    // container.style.overflowX = 'scroll';
+
+    const touch = event.touches[0];
+    container.dataset.touchStart = touch.clientX;
+    container.dataset.scrollLeftStart = container.scrollLeft;
+  };
+
+  const handleTouchMove = (event) => {
+    const container = containerRef.current;
+    const touch = event.touches[0];
+    const touchStart = parseInt(container.dataset.touchStart, 10);
+    const scrollLeftStart = parseInt(container.dataset.scrollLeftStart, 10);
+    const touchMoveDelta = touch.clientX - touchStart;
+    console.log(touchMoveDelta)
+
+    container.scrollLeft = scrollLeftStart - touchMoveDelta;
+  };
+
+  const handleTouchEnd = () => {
+    const container = containerRef.current;
+    container.style.scrollBehavior = 'smooth';
+    // container.style.overflowX = 'auto';
+
+    delete container.dataset.touchStart;
+    delete container.dataset.scrollLeftStart;
+  };
+
   return (
     <div>
-      <div className='slideContainer' ref={containerRef} onWheel={handleScroll}>
+      <div className='slideContainer' ref={containerRef} onWheel={handleScroll} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <section id='slide-1'>
           <h1>Art Page 1</h1>
         </section>
