@@ -8,7 +8,6 @@ import DevContent from './DevContent';
 import ArtContent from './ArtContent';
 import DevIconPack from './DevIconPack';
 import ArtIconPack from './ArtIconPack';
-// import AnimatedComponentWrapper from './AnimatedComponentWrapper';
 
 function App() {
   const [activeProfile, setActiveProfile] = useState("Developer");
