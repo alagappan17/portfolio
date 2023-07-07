@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import ScrollBar from './ScrollBar';
+// import ScrollBar from './ScrollBar';
 
 const ArtContent = () => {
   const containerRef = useRef(null);
@@ -101,7 +101,7 @@ const ArtContent = () => {
           <h1>Art Page 6</h1>
         </section>
       </div>
-      <ScrollBar timelineRef = {timelineRef} currentSlide = {currentSlide}/>
+      {/* <ScrollBar timelineRef = {timelineRef} currentSlide = {currentSlide}/> */}
     </div>
   );
 };

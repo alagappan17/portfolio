@@ -120,16 +120,8 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   scroll-snap-align: start;
-}
-
-.scrollCon section:nth-of-type(1) {
-  background: lightgreen;
-}
-
-.scrollCon section:nth-of-type(2) {
-  background: red;
 }
 
 .scrollCon section:nth-of-type(3) {
@@ -140,6 +132,65 @@
   display: none;
 }
 
+/*Slide Common*/
+
+.slide-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.slide-right {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+/*Slide 1*/
+#slide-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-1-props h1 {
+  font-family: 'Louis George Cafe';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px;
+  line-height: 50px;
+}
+
+.slide-1-props p {
+  font-family: 'Louis George Cafe';
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*Slide 2*/
+
+#slide-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-2-props p {
+  font-family: 'Louis George Cafe';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.slide-left.slide-2-props span {
+  transition: 0.3s ease-in-out;
+}
+
+.slide-left.slide-2-props span:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.slide-2-right {
+  height: 60%;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -169,6 +220,11 @@
     font-size: 30px;
   }
 
+  .scrollCon section {
+    height: 90vh;
+    padding-bottom: 10vh;
+  }
+
   /*Social Icons*/
   .social-icons-container {
     justify-content: space-around;
@@ -186,6 +242,85 @@
 
   .iconText {
     font-size: 20px;
+  }
+
+  /*Slide Common*/
+
+  .slide-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+  }
+  
+  .slide-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .subSlide {
+    width: 90%;
+  }
+  
+  /*Slide 1*/
+  #slide-1 {
+    flex-direction: column;
+  }
+  
+  .slide-left.slide-1-props {
+    /* padding: 20px; */
+    text-align:center;
+  }
+  
+  .slide-1-props h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+  
+  .slide-1-props p {
+    font-size: 17px;
+    padding: 10px 0px;
+    margin: 0;
+  }
+  
+  .slide-1-props p span{
+    font-size: 20px;
+  }
+
+  .slide-1-props img {
+    width: 250px;
+    margin: auto;
+    /* margin-bottom: 50px; */
+  }
+
+  /*Slide 2*/
+  #slide-2 {
+    flex-direction: column-reverse;
+  }
+
+  .slide-2-props p {
+    font-size: 20px;
+  }
+
+  .slide-left.slide-2-props {
+    align-items: center;
+    /* padding: 20px; */
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .slide-left.slide-2-props span {
+    font-size: 30px;
+  }
+
+  .slide-left.slide-2-props span:hover {
+    font-size: 40px;
+  }
+
+  .slide-2-right {
+    height: 35%;
   }
 }
 
@@ -234,6 +369,83 @@
   .iconText {
     font-size: 20px;
   }
+
+  /*Slide Common*/
+
+  .slide-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+  }
+    
+  .slide-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+    
+  /*Slide 1*/
+  #slide-1 {
+    flex-direction: column;
+  }
+    
+  .subSlide {
+    width: 90%;
+  }
+    
+  .slide-left.slide-1-props {
+    /* padding: 20px; */
+    text-align: center;
+   }
+    
+  .slide-1-props h1 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .slide-1-props p {
+    font-size: 20px;
+  }
+  
+  .slide-1-props p span{
+    font-size: 25px;
+  }
+  
+  .slide-1-props img {
+    width: 280px;
+    margin: auto;
+    /* margin-bottom: 50px; */
+  }
+
+  /*Slide 2*/
+  #slide-2 {
+    flex-direction: column-reverse;
+  }
+
+  .slide-2-props p {
+    font-size: 20px;
+  }
+
+  .slide-left.slide-2-props {
+    align-items: center;
+    /* padding: 20px; */
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .slide-left.slide-2-props span {
+    font-size: 30px;
+  }
+
+  .slide-left.slide-2-props span:hover {
+    font-size: 40px;
+  }
+
+  .slide-2-right {
+    height: 35%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -271,6 +483,85 @@
     margin-right: 30px;
     font-size: 35px;
   }
+
+  /*Slide Common*/
+  .slide-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+  }
+
+  .slide-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  /*Slide 1*/
+  #slide-1 {
+    flex-direction: row;
+  }
+
+  .subSlide {
+    width: 40%;
+  }
+
+  .slide-right.slide-1-props {
+    padding: 20px;
+    text-align: left;
+  }
+
+  /* .slide-left.slide-1-props {
+    padding: 20px;
+    text-align: right;
+  } */
+
+  .slide-1-props h1 {
+    font-size: 40px;
+  }
+
+  .slide-1-props p {
+    font-size: 20px;
+  }
+
+  .slide-1-props p span{
+    font-size: 30px;
+  }
+
+  .slide-1-props img {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  /*Slide 2*/
+  #slide-2 {
+    flex-direction: row;
+  }
+
+  .slide-left.slide-2-props {
+    align-items: flex-end;
+    padding: 20px;
+    text-align: right;
+    line-height: 28px;
+  }
+  
+  .slide-2-props p {
+    font-size: 22px;
+  }
+
+  .slide-left.slide-2-props span {
+    font-size: 35px;
+  }
+
+  .slide-left.slide-2-props span:hover {
+    font-size: 45px;
+  }
+
+  .slide-2-right {
+    height: 60%;
+  }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -301,7 +592,7 @@
     bottom: 40px;
     float: left;
     margin-left: 70px;
-    align-items: start;
+    align-items:flex-start;
   }
 
   .social-icons-container a {
@@ -310,6 +601,23 @@
 
   .iconText {
     font-size: 20px;
+  }
+
+  .slide-1-props h1 {
+    font-size: 45px;
+  }
+
+  /*Slide 2*/
+  .slide-2-props p {
+    font-size: 25px;
+  }
+
+  .slide-left.slide-2-props span {
+    font-size: 40px;
+  }
+
+  .slide-left.slide-2-props span:hover {
+    font-size: 45px;
   }
 }
 
