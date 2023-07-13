@@ -47,7 +47,7 @@ export async function getNowPlayingItem(
   refresh_token
 ) {
   const response = await getNowPlaying(client_id, client_secret, refresh_token);
-  console.log(response)
+  // console.log(response)
   if (response.status === 204 || response.status > 400) {
     return false;
   }
@@ -58,7 +58,7 @@ export async function getNowPlayingItem(
   const isPlaying = song.is_playing;
   const songUrl = song.item.external_urls.spotify;
   const title = song.item.name;
-  console.log(song, artist)
+  console.log(title, artist, isPlaying)
 
   return {
     albumImageUrl,

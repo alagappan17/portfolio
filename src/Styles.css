@@ -10,7 +10,7 @@
   src: url("./fonts/LouisGeorgeCafe.ttf");
 }
 
-body {
+body, ::placeholder {
   font-family: 'louisGeorge';
   font-style: normal;
 }
@@ -516,6 +516,76 @@ body {
     margin: 3px 3px;
   }
 }
+
+/*Slide 5*/
+
+/*Contact*/
+.formContainer {
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  width: 100%;
+  height: 60vh;
+  border: 2px solid black;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 35px;
+  /* margin: auto; */
+}
+
+.formElement {
+  padding: 5px;
+  display: grid;
+  text-align: left;
+  width: 95%;
+}
+
+.formElement label {
+  font-weight: 800;
+  padding: 5px;
+}
+
+.formElement input{
+  padding: 10px;
+  /* margin: auto; */
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+  /* margin-right: 30px; */
+}
+
+.formElement textarea {
+  height: 100px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+  resize: none;
+}
+
+.formContainer button{
+  
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: 10px;
+  font-weight: 600;
+  text-align:center;
+  transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);  
+}
+
+.formContainer button:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
+
 
 @media only screen and (min-width: 600px) {
    /*Header*/

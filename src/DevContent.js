@@ -15,10 +15,10 @@ const DevContent = () => {
   return (
     <div>
       <div className="scrollCon">
-        {/* <DevSlide1 /> */}
-        {/* <DevSlide2 /> */}
-        {/* <DevSlide3 /> */}
-        {/* <DevSlide4 /> */}
+        {/* <DevSlide1 />
+        <DevSlide2 />
+        <DevSlide3 />
+        <DevSlide4 /> */}
         <DevSlide5 />
       </div>
     </div>
