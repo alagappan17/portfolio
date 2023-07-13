@@ -7,11 +7,11 @@ const NavButtons = () => {
     const { activeProfile, setActiveProfile } = useContext(ProfileContext)
   return (
     <div>
-        <div class="navButton-container fadeInUp">
-            <div class={`navButton-item devButton ${activeProfile === "Developer" ? "blackButton" : "whiteButton"}`} onClick={() => {setActiveProfile("Developer")}}>
+        <div className="navButton-container fadeInUp">
+            <div className={`navButton-item devButton ${activeProfile === "Developer" ? "blackButton" : "whiteButton"}`} onClick={() => {setActiveProfile("Developer")}}>
                 <span>Developer</span>
             </div>
-            <div class={`navButton-item artButton ${activeProfile === "Artist" ? "blackButton" : "whiteButton"}`} onClick={() => {setActiveProfile("Artist")}}>
+            <div className={`navButton-item artButton ${activeProfile === "Artist" ? "blackButton" : "whiteButton"}`} onClick={() => {setActiveProfile("Artist")}}>
                 <span>Digital Artist</span>
             </div>
         </div>

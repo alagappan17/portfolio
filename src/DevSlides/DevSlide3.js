@@ -32,7 +32,7 @@ const DevSlide3 = () => {
             </div>
             <hr className='lineDivide'/>
             <div className='workDesc fadeInRight' key={Math.random()}>
-                { exp == "SVCE" ? (
+                { exp === "SVCE" ? (
                 <div>
                     <div>
                         <h1>Sri Venkateswara College of Engineering</h1>
@@ -61,7 +61,7 @@ const DevSlide3 = () => {
                         <div className='skillBox'>Deep Learning</div>
                     </div>
                 </div>
-                ) : exp == "TANSAM" ? (
+                ) : exp === "TANSAM" ? (
                 <div>
                     <div>
                         <h1>Tamil Nadu Smart and Advanced Manufacturing Center (Powered By SIEMENS)</h1>

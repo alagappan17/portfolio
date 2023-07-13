@@ -14,11 +14,11 @@ const DevSlide5 = React.lazy(() => import('./DevSlides/DevSlide5'));
 const DevContent = () => {
   return (
     <div>
-      <div class="scrollCon">
-        {/* <DevSlide1 />
-        <DevSlide2 /> */}
+      <div className="scrollCon">
+        {/* <DevSlide1 /> */}
+        {/* <DevSlide2 /> */}
         {/* <DevSlide3 /> */}
-        <DevSlide4 />
+        {/* <DevSlide4 /> */}
         <DevSlide5 />
       </div>
     </div>
