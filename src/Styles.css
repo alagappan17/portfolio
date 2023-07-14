@@ -172,7 +172,7 @@ body, ::placeholder {
 
 /*Slide 2*/
 
-#slide-2 {
+#slide-2, #slide-5 {
   display: flex;
   justify-content: center;
 }
@@ -254,6 +254,55 @@ body, ::placeholder {
 .lineDivide {
   border: 1px solid black;
   height: 90%;
+}
+
+/*Slide 5*/
+
+/*Contact*/
+.formContainer {
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid black;
+}
+
+.formElement {
+  display: grid;
+  text-align: left;
+}
+
+.formElement label {
+  font-weight: 800;
+  padding: 5px;
+}
+
+.formElement input{
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.formElement textarea {
+  border: 2px solid black;
+  resize: none;
+}
+
+.formContainer button{
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: 2px solid #000;
+  font-weight: 600;
+  text-align:center;
+  transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);  
+}
+
+.formContainer button:hover{
+  background: black;
+  color: white;
 }
 
 @media only screen and (max-height: 680px) {
@@ -365,8 +414,9 @@ body, ::placeholder {
   }
 
   /*Slide 2*/
-  #slide-2 {
+  #slide-2, #slide-5 {
     flex-direction: column-reverse;
+    /* justify-content: center; */
   }
 
   .slide-2-props p {
@@ -515,77 +565,49 @@ body, ::placeholder {
     border-radius: 20px;
     margin: 3px 3px;
   }
+
+  /*Contact*/
+  .formContainer {
+    padding: 10px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 35px;
+    margin: auto;
+  }
+
+  .formContainer h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .formElement {
+    /* padding: 5px; */
+    width: 96%;
+  }
+
+  .formElement input{
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .formElement textarea {
+    height: 50px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .formContainer button{
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: 10px; 
+    margin-top: 8px;
+  }
 }
-
-/*Slide 5*/
-
-/*Contact*/
-.formContainer {
-  background-color: rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 10px;
-  width: 100%;
-  height: 60vh;
-  border: 2px solid black;
-  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 35px;
-  /* margin: auto; */
-}
-
-.formElement {
-  padding: 5px;
-  display: grid;
-  text-align: left;
-  width: 95%;
-}
-
-.formElement label {
-  font-weight: 800;
-  padding: 5px;
-}
-
-.formElement input{
-  padding: 10px;
-  /* margin: auto; */
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid black;
-  /* margin-right: 30px; */
-}
-
-.formElement textarea {
-  height: 100px;
-  padding: 10px;
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid black;
-  resize: none;
-}
-
-.formContainer button{
-  
-  display: inline-block;
-  outline: 0;
-  cursor: pointer;
-  border: 2px solid #000;
-  border-radius: 10px;
-  height: 30px;
-  width: 80px;
-  margin-left: auto;
-  margin-right: 10px;
-  font-weight: 600;
-  text-align:center;
-  transition-duration: .15s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);  
-}
-
-.formContainer button:hover{
-  background: rgba(0, 0, 0, 0.3);
-}
-
 
 @media only screen and (min-width: 600px) {
    /*Header*/
@@ -683,7 +705,7 @@ body, ::placeholder {
   }
 
   /*Slide 2*/
-  #slide-2 {
+  #slide-2, #slide-5 {
     flex-direction: column-reverse;
   }
 
@@ -812,6 +834,47 @@ body, ::placeholder {
     border-radius: 20px;
     margin: 3px 3px;
   }
+    /*Contact*/
+  .formContainer {
+    padding: 10px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 35px;
+    margin: auto;
+  }
+
+  .formContainer h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .formElement {
+    /* padding: 5px; */
+    width: 96%;
+  }
+
+  .formElement input{
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .formElement textarea {
+    height: 50px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .formContainer button{
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: 10px; 
+    margin-top: 8px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -929,6 +992,12 @@ body, ::placeholder {
     line-height: normal;
     font-size: 14px;
   }
+
+  .formContainer {
+    width: 70%;
+    height: 90%;
+    margin: auto;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -996,7 +1065,7 @@ body, ::placeholder {
     margin-bottom: 50px;
   }
   /*Slide 2*/
-  #slide-2 {
+  #slide-2, #slide-5 {
     flex-direction: row;
   }
 
@@ -1114,6 +1183,42 @@ body, ::placeholder {
   .workDescList li{
     line-height: normal;
     font-size: 16px;
+  }
+
+  /*Contact*/
+  .formContainer {
+    padding: 10px;
+    width: 100%;
+    height: 60%;
+    /* height: 60vh; */
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 35px;
+  }
+
+  .formElement {
+    padding: 5px;
+    width: 92%;
+  }
+
+  .formElement input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .formElement textarea {
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .formContainer button{
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: 10px; 
   }
 } 
 

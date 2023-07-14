@@ -73,7 +73,15 @@ getNowPlayingItem();
 
 const NowPlayingNew = () => {
   return (
-    <div>NowPlayingNew</div>
+    <div>
+      <div>NowPlayingNew</div>
+      <div>NowPlayingNew</div>
+      <div>NowPlayingNew</div>
+      <div>NowPlayingNew</div>
+      <div>NowPlayingNew</div>
+      <div>NowPlayingNew</div>
+      <div>NowPlayingNew</div>
+    </div>
   )
 }
 

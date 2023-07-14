@@ -4,7 +4,7 @@ import EmailForm from './EmailForm'
 
 const DevSlide5 = () => {
     return (
-    <section id='slide-2' className='slideArea'>
+    <section id='slide-5' className='slideArea'>
       <div className='subSlide slide-left'>
         <EmailForm />
       </div>
