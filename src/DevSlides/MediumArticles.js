@@ -54,9 +54,10 @@ const MediumArticles = () => {
     return (
     <div>
       <div className="blog-container">
-          <BlogCard blog={articles.article1} />
-          <BlogCard blog={articles.article2} />
-          {/* <BlogCard key={article.id} blog={article} /> */}
+        <BlogCard blog={articles.article1} />
+        <BlogCard blog={articles.article2} />
+        <BlogCard blog={articles.article2} />
+        {/* <BlogCard key={article.id} blog={article} /> */}
       </div>
     </div>
     );

@@ -84,7 +84,7 @@ const SpotifyTopList = () => {
   return (
     <div className='playlistContainer'>
         {/* <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/playlist/1BYFqAprvayu7YyuQlhboF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
-        <div className='playlistCover'><img src={playlistCover} style={{width: '60px'}}/></div>
+        <div className='playlistCover'><img src={playlistCover}/></div>
         <div className='playlistInfo'>
             <div className='playlistHeader'>My Playlist</div>
             <div className='playlistName'><a href={playlistUrl}>{playlistName}</a></div>

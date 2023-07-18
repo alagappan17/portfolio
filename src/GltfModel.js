@@ -2,8 +2,6 @@
   import { useLoader, useFrame } from "@react-three/fiber";
   import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
   import { useEffect } from "react";
-  // import { useAnimations } from "@react-three/drei";
-  // import * as THREE from 'three'
 
 
   const GltfModel = ({ modelPath, scale = 40, position = [0, 0, 0] }) => {

@@ -28,7 +28,7 @@ const EmailForm = () => {
       };
     return (
         <form class="formContainer fadeInRight" onSubmit={handleOnSubmit}>
-            <h2>Pst Pst..Slide into my DMs. Let's have a chat!</h2>
+            <h2>Psstt Psstt...Slide into my DMs. Let's have a chat!</h2>
             <div class="formElement">
                 <label for="from_name">Name</label>
                 <input type="text" id="from_name" name="from_name" placeholder="Your name.." required />
