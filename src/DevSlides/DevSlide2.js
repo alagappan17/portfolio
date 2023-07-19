@@ -16,4 +16,4 @@ const DevSlide2 = () => {
   )
 }
 
-export default DevSlide2
+export default DevSlide2;

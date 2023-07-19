@@ -7,7 +7,8 @@ import { Environment } from '@react-three/drei'
 const ModelViewer = ({ modelPath, scale = 40, position = [0, 0, 0] }) => {
   const handleModelError = (error, errorInfo) => {
     console.error("An error occurred while loading the 3D model:", error, errorInfo);
-    return (<div>Error loading Model</div>)
+    // Perform additional error handling, logging, or notification if needed.
+    return (<div>Error loading </div>)
   };
   return (
     <ErrorBoundary onCatch={handleModelError}>
