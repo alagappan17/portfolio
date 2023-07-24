@@ -24,7 +24,7 @@ const DevSlide1 = () => {
             <span>p</span>
             <span>a</span>
             <span>n</span>
-            <span id='star'>✨</span>
+            <span id='star' aria-label='star' role='img'>✨</span>
         </h1>
         <p className='fadeInRight'>Driven by the passion for<br />Design, Development & Digital Art,<br /> I blend my logical and creative personas towards <br />building software solutions that are as efficient as<br />a caffeine-fueled coder during a hackathon.</p>
         </div>
