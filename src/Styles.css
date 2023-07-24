@@ -158,6 +158,10 @@ body, ::placeholder {
   justify-content: center;
 }
 
+#slide-1 {
+  gap: 20px;
+}
+
 .slide-1-props h1 {
   font-weight: 400;
   margin: 0px;
@@ -573,6 +577,65 @@ body, ::placeholder {
   margin: 0;
 }
 
+.artLoadingSlide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.artLoadingSlide h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+.artLoadingSlide h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.dadJokeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  border-radius: 22px;
+  border: 2px solid #000;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.dadJokeContainer p{
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.jokeButton {
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  border-radius: 22px;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: 600;
+}
+
+.jokeButton:hover {
+  transform: translateX(-5px) translateY(-5px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
 
 @media only screen and (max-height: 680px) {
   .skillBox {
@@ -1009,12 +1072,12 @@ body, ::placeholder {
 
   .blog-card {
     width: 300px;
-    height: 45px;
+    height: 30px;
     padding: 10px;
   }
 
 
-  .blog-card:nth-child(3) {
+  .blogHider {
     display: none;
   }
 
@@ -1045,11 +1108,11 @@ body, ::placeholder {
   }
 
   .slide-left.slide-4-props {
-    height: 40%;
+    height: 30%;
   }
 
   .slide-right.slide-4-props {
-    height: 50%;
+    height: 60%;
   }
   
   .slide-4-props h1 {
@@ -1068,6 +1131,34 @@ body, ::placeholder {
   
   .smallItem h2{
     font-size: 15px;
+  }
+
+  .cardImage {
+    width: 220px;
+    height: 275px;
+  }
+
+  .circle {
+    width: 125px;
+    height: 125px;
+  }
+
+  .artLoadingSlide h1 {
+    font-size: 20px;
+  }
+  
+  .artLoadingSlide h2 {
+    font-size: 16px;
+  }
+  
+  .dadJokeContainer {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+  }
+  
+  .dadJokeContainer p{
+    font-size: 14px;
   }
 }
 
@@ -1456,12 +1547,12 @@ body, ::placeholder {
   
     .blog-card {
       width: 260px;
-      height: 45px;
+      height: 30px;
       padding: 10px;
     }
 
 
-    .blog-card:nth-child(3) {
+    .blogHider {
       display: none;
     }
   
@@ -1515,6 +1606,16 @@ body, ::placeholder {
     
     .smallItem h2{
       font-size: 15px;
+    }
+
+    .cardImage {
+      width: 260px;
+      height: 325px;
+    }
+  
+    .circle {
+      width: 150px;
+      height: 150px;
     }
 }
 
@@ -1969,11 +2070,11 @@ body, ::placeholder {
 
   .blog-card {
     width: 350px;
-    height: 50px;
+    height: 30px;
     padding: 10px;
   }
 
-  .blog-card:nth-child(3) {
+  .blogHider {
     display: block;
   }
 
@@ -2245,7 +2346,7 @@ body, ::placeholder {
 
 .blog-card {
   width: 130px;
-  height: 110px;
+  height: 80px;
   padding: 10px;
   -webkit-line-clamp: 4;
   line-clamp: 4;

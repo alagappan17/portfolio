@@ -1,9 +1,8 @@
 import React from 'react'
-import NowPlaying from './NowPlaying'
-import EmailForm from './EmailForm'
-import MediumArticles from './MediumArticles'
-import SpotifyTopList from './SpotifyTopList'
-import MyPlaylist from  './MyPlaylist'
+import NowPlaying from './DevComponents/Spotify/NowPlaying'
+import EmailForm from './DevComponents/EmailForm'
+import MediumArticles from './DevComponents/Medium/MediumArticles'
+import MyPlaylist from  './DevComponents/Spotify/MyPlaylist'
 
 const DevSlide5 = () => {
     return (

@@ -16,9 +16,9 @@
 
     useFrame((state, delta) => {
       if(!hovered)
-        ref.current.rotation.y += 0.003
+        ref.current.rotation.y += 0.008
       else {
-        ref.current.rotation.y -= 0.006
+        ref.current.rotation.y += 0.002
       }
     });
 

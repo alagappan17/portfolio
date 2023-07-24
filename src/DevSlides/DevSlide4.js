@@ -11,7 +11,7 @@ const DevSlide4 = () => {
                     <h2>Hover me!</h2>
                 </div>
             </div> */}
-            <ModelViewer scale=".5" modelPath={"./models/console.glb"} />
+            <ModelViewer scale=".4" modelPath={"./models/console.glb"} />
         </div>
         <div className='subSlide slide-right slide-4-props'>
             <h1>Projects</h1>

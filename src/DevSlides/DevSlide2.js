@@ -10,7 +10,7 @@ const DevSlide2 = () => {
             </p>
         </div>
             <div className='subSlide slide-2-right slide-right'>
-            <ModelViewer scale=".008" modelPath={"./models/car_anim.glb"} />
+            <ModelViewer scale=".5" modelPath={"./models/Island.glb"} />
         </div>
     </section>
   )
