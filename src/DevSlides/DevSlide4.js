@@ -50,17 +50,17 @@ const DevSlide4 = () => {
                     {/* <p>React.js</p> */}
                 </div>
                 </a>
+                <a href={projectSixLink} target="_blank" rel="noopener noreferrer">
+                <div className='projectItem smallItem'>
+                    <h2>Interactive Commerce Truck in VR</h2>
+                    {/* <p>Unity, Blender, C#</p> */}
+                </div>
+                </a>
                 <a href={projectFiveLink} target="_blank" rel="noopener noreferrer">
                 <div className='projectItem smallItem'>
                     <h2>Tsuki Clone</h2>
                     {/* <h2>Terminal Based Chess Game</h2> */}
                     {/* <p>Programming(C)</p> */}
-                </div>
-                </a>
-                <a href={projectSixLink} target="_blank" rel="noopener noreferrer">
-                <div className='projectItem smallItem'>
-                    <h2>Interactive Commerce Truck in VR</h2>
-                    {/* <p>Unity, Blender, C#</p> */}
                 </div>
                 </a>
                 <a href={projectSevenLink} target="_blank" rel="noopener noreferrer">

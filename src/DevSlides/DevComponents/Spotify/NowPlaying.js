@@ -9,6 +9,9 @@ const NOW_PLAYING_ENDPOINT = 'https://api.spotify.com/v1/me/player/currently-pla
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 // const TOP_TRACKS_ENDPOINT = 'https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=5&offset=0'
 
+// const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+// const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
+// const refresh_token = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
 const client_id = 'ab3999a80379407a9a62642df4a7b7c7';
 const client_secret = '3eb1afcbaebe4605bbd8a7a990d17607';
 const refresh_token = 'AQCI1ykgJJ76OTJr9PLmIHjoEx0If7_0lULLwDmiINHnHCa6rEYM9lZRKQXi4lK59HQEBqyLz_9IlK-fH7ZP6d8h3ngbFNbHrsKsTk1fE92xkjrpGHtViojewENeSf1dFew';
