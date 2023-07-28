@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/static/js/2.b2db394e.chunk.js"
   },
   {
-    "revision": "877dd203e9f65b39ac117010d1cf2a62",
-    "url": "/static/media/LouisGeorgeCafe.877dd203.ttf"
-  },
-  {
     "revision": "06f0dfb3dd526cd200d2e0df79f17ce6",
     "url": "/static/media/LouisGeorgeCafeLight.06f0dfb3.ttf"
+  },
+  {
+    "revision": "877dd203e9f65b39ac117010d1cf2a62",
+    "url": "/static/media/LouisGeorgeCafe.877dd203.ttf"
   },
   {
     "revision": "c187bf19998aaf2959e65ddfc0b4f3f3",
