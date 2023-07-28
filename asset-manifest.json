@@ -1,14 +1,14 @@
 {
-  "main.css": "/portfolio/static/css/main.bbd152ad.chunk.css",
-  "main.js": "/portfolio/static/js/main.977ef8b3.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.977ef8b3.chunk.js.map",
-  "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
-  "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-  "static/js/2.b2db394e.chunk.js": "/portfolio/static/js/2.b2db394e.chunk.js",
-  "static/js/2.b2db394e.chunk.js.map": "/portfolio/static/js/2.b2db394e.chunk.js.map",
-  "index.html": "/portfolio/index.html",
-  "precache-manifest.6ffd7a612697a1f949f5fa72fcda7951.js": "/portfolio/precache-manifest.6ffd7a612697a1f949f5fa72fcda7951.js",
-  "service-worker.js": "/portfolio/service-worker.js",
-  "static/css/main.bbd152ad.chunk.css.map": "/portfolio/static/css/main.bbd152ad.chunk.css.map",
-  "static/media/Styles.css": "/portfolio/static/media/LouisGeorgeCafeLight.06f0dfb3.ttf"
+  "main.css": "/static/css/main.23cd4854.chunk.css",
+  "main.js": "/static/js/main.719e4975.chunk.js",
+  "main.js.map": "/static/js/main.719e4975.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.b2db394e.chunk.js": "/static/js/2.b2db394e.chunk.js",
+  "static/js/2.b2db394e.chunk.js.map": "/static/js/2.b2db394e.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.e4465d2e6f618eda738956148a718648.js": "/precache-manifest.e4465d2e6f618eda738956148a718648.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.23cd4854.chunk.css.map": "/static/css/main.23cd4854.chunk.css.map",
+  "static/media/Styles.css": "/static/media/LouisGeorgeCafeLight.06f0dfb3.ttf"
 }
