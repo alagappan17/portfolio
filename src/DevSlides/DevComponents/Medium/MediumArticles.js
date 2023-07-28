@@ -16,16 +16,18 @@ const getArticles = async () => {
     const articles = await response.json();
     const article1 = articles.items[0]
     const article2 = articles.items[1]
+    const article3 = articles.items[2]
     // const article3 = articles.items[0]
-    // console.log(articles)
+    console.log(articles)
 
     return {
       // articles
       article1,
-      article2
+      article2,
+      article3
     };
   } catch (error) {
-    console.error('Error fetching Playlist:', error);
+    console.error('Error fetching Articles:', error);
     return error.message.toString();
   }
 }
@@ -56,7 +58,7 @@ const MediumArticles = () => {
       <div className="blog-container">
         <BlogCard blog={articles.article1} id='1'/>
         <BlogCard blog={articles.article2} id='2'/>
-        <BlogCard blog={articles.article2} id='3'/>
+        {articles.article3 ? <BlogCard blog={articles.article3} id='3'/> : ''}
       </div>
     </div>
     );
