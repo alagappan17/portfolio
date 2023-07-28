@@ -2,13 +2,13 @@ import React from 'react'
 import ModelViewer from '../ModelViewer'
 
 const DevSlide4 = () => {
-    const projectOneLink = 'https://docs.google.com/presentation/d/1TsJjEURSWLCGGNAypgQBUdCD4eut3KCsZD2Kc13ONrk/edit#slide=id.g25b56f934b8_0_10'
-    const projectTwoLink = 'https://docs.google.com/presentation/d/1TsJjEURSWLCGGNAypgQBUdCD4eut3KCsZD2Kc13ONrk/edit#slide=id.g25b56f934b8_0_15'
-    const projectThreeLink = 'https://docs.google.com/presentation/d/1TsJjEURSWLCGGNAypgQBUdCD4eut3KCsZD2Kc13ONrk/edit#slide=id.g25b53f9a3a4_1_0'
-    const projectFourLink = 'https://docs.google.com/presentation/d/1TsJjEURSWLCGGNAypgQBUdCD4eut3KCsZD2Kc13ONrk/edit#slide=id.g25b53f9a3a4_1_10'
-    const projectFiveLink = 'https://docs.google.com/presentation/d/1TsJjEURSWLCGGNAypgQBUdCD4eut3KCsZD2Kc13ONrk/edit#slide=id.g25b53f9a3a4_1_5'
-    const projectSixLink = 'https://docs.google.com/presentation/d/1TsJjEURSWLCGGNAypgQBUdCD4eut3KCsZD2Kc13ONrk/edit#slide=id.g25b53f9a3a4_1_15'
-    const projectSevenLink = 'https://docs.google.com/presentation/d/1TsJjEURSWLCGGNAypgQBUdCD4eut3KCsZD2Kc13ONrk/edit#slide=id.g25b53f9a3a4_1_20'
+    const projectOneLink = 'https://loving-shelf-1a7.notion.site/Best-Crop-Prediction-Based-On-Yield-Using-Hybrid-Deep-Learning-Models-and-IoT-77ae864f55c1478c81adcfced7435485'
+    const projectTwoLink = 'https://loving-shelf-1a7.notion.site/CoinSpot-Real-Time-Crypto-Statistics-b4b9db1aeb3444e6af23fbec4a645410'
+    const projectThreeLink = 'https://loving-shelf-1a7.notion.site/Portfolio-Website-827f3365371546929b9565a2ecbb13b6'
+    const projectFourLink = 'https://loving-shelf-1a7.notion.site/Meme-Generator-67b50196ab1b493c86a1654b8ab86c24'
+    const projectFiveLink = 'https://loving-shelf-1a7.notion.site/Tsuki-Clone-35efba1692e343e9b88533842dfa7009'
+    const projectSixLink = 'https://loving-shelf-1a7.notion.site/Interactive-e-Commerce-Truck-in-VR-51b605030b2d4dec946b0fd89b6192f7'
+    const projectSevenLink = 'https://loving-shelf-1a7.notion.site/Other-Projects-f2f85ee60e9e4d079ad486e24ebe04f8'
   return (
     <section id='slide-4' className='slideArea'>
         <div className='subSlide slide-4-props slide-left'>
@@ -50,17 +50,17 @@ const DevSlide4 = () => {
                     {/* <p>React.js</p> */}
                 </div>
                 </a>
+                <a href={projectSixLink} target="_blank" rel="noopener noreferrer">
+                <div className='projectItem smallItem'>
+                    <h2>Interactive Commerce Truck in VR</h2>
+                    {/* <p>Unity, Blender, C#</p> */}
+                </div>
+                </a>
                 <a href={projectFiveLink} target="_blank" rel="noopener noreferrer">
                 <div className='projectItem smallItem'>
                     <h2>Tsuki Clone</h2>
                     {/* <h2>Terminal Based Chess Game</h2> */}
                     {/* <p>Programming(C)</p> */}
-                </div>
-                </a>
-                <a href={projectSixLink} target="_blank" rel="noopener noreferrer">
-                <div className='projectItem smallItem'>
-                    <h2>Interactive Commerce Truck in VR</h2>
-                    {/* <p>Unity, Blender, C#</p> */}
                 </div>
                 </a>
                 <a href={projectSevenLink} target="_blank" rel="noopener noreferrer">
